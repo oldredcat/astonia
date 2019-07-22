@@ -1,0 +1,126 @@
+html, body {
+	height: 100%;
+	
+	background: rgba(203,0,54,1);
+	background: -moz-linear-gradient(51deg, rgb(203,0,53) 0%, rgb(224,105,0) 100%);
+	background: -webkit-linear-gradient(51deg, rgb(203,0,53) 0%, rgb(224,105,0) 100%);
+	background: -o-linear-gradient(51deg, rgb(203,0,54) 0%, rgb(224,105,0) 100%);
+	background: -ms-linear-gradient(51deg, rgb(203,0,53) 0%, rgb(224,105,0) 100%);
+	background: linear-gradient(51deg, rgb(203,0,54) 0%, rgb(224,105,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb0036', endColorstr='#e06900', GradientType=1 );
+	
+	background-image: url(../images/bg-img.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	
+	font-family: 'Proxima Nova';
+	
+	color: #fff;
+	
+	font-size: 18px;
+}
+
+#all {
+	height: 100%;
+	padding: 0 10px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1345px;
+	height: 100%;
+	position: relative;
+	
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.clr {
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+}
+
+.content {
+	text-align: center;
+	max-width: 600px;
+	
+	h1 {
+		font-size: 48px;
+		margin: 0;
+		padding-bottom: 5px;
+	}
+	
+	.text {
+		p {
+			margin: 0;
+			line-height: 30px;
+		}
+	}
+}
+
+#popup-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.3);
+	z-index: 1000;
+	display: none;
+}
+
+#popup {
+	position: fixed;
+	top: 50%;
+	height: 300px;
+	width: calc(100% - 10px);
+	padding: 5px;
+	background: #fff;
+	z-index: 1001;
+	margin-top: -150px;
+	display: none;
+	color: #333;
+	
+	@media (min-width: 576px) {
+	  	height: 400px;
+	}
+	
+	@media (min-width: 768px) {
+	  	height: 480px;
+		width: 640px;
+		left: 50%;
+		margin-left: -320px;
+		margin-top: -240px;
+	}
+	
+	h1 {
+		margin: 0;
+		font-size: 18px;
+	}
+	
+	.close {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+	
+	iframe {
+		height: calc(100% - 20px);
+	}
+}
+
+.popup-content,
+.class-video,
+#video-view {
+	width: 100%;
+	height: 100%;
+}

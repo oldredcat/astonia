@@ -1,0 +1,49 @@
+.btns {
+	line-height: 0;
+	padding-top: 55px;
+	
+	.btn {
+		display: inline-block;
+		line-height: 50px;
+		height: 50px;
+		width: 200px;
+		color: #fff;
+		margin: 0 10px 10px 0;
+		border: rgba(255,255,255,.31) solid 1px;
+		
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+		border-radius: 25px;
+		
+		-webkit-transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+		-o-transition: all .3s ease-out;
+		transition: all .3s ease-out;
+		
+		&.active,
+		&:hover {
+			background: #fff;
+			color: #d32721;
+			border: rgba(255,255,255,1) solid 1px;
+		}
+	}
+}
+
+.ico {
+	position: relative;
+	padding-left: 10px;
+	width: 190px !important;
+		
+	&:before {
+		position: absolute;
+		left: 25px;
+		top: 0;
+	}
+		
+	&-play {
+			
+		&:before {
+			content: '\25BA';
+		}
+	}
+}
